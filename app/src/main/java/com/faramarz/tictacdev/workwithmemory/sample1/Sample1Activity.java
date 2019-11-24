@@ -1,6 +1,7 @@
 package com.faramarz.tictacdev.workwithmemory.sample1;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -28,7 +29,6 @@ public class Sample1Activity extends AppCompatActivity {
     private String filepath = "MyFileStorage";
     File myExternalFile;
     String myData = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

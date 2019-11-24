@@ -101,7 +101,6 @@ public class Sample2Activity extends AppCompatActivity implements View.OnClickLi
                     writeFileToSD("myTXT", "Bodyyyyyyyyyyy");
                 } else {
                     Log.i("ALERT", "no sdcard");
-
                 }
                 break;
 
