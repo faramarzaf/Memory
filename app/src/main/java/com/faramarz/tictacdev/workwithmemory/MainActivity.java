@@ -15,8 +15,6 @@ import android.widget.Toast;
 
 import com.faramarz.tictacdev.workwithmemory.sample1.Sample1Activity;
 import com.faramarz.tictacdev.workwithmemory.sample2.Sample2Activity;
-import com.faramarz.tictacdev.workwithmemory.utility.BaseApplication;
-import com.faramarz.tictacdev.workwithmemory.utility.PublicMethods;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -31,12 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bind();
         checkReadWriteExternalPermission();
 
-        /*PublicMethods.shortToast(this, "asda");
-        PublicMethods.longToast(this,PublicMethods.getEditText(btnSample1));
-*/
-        PublicMethods.shortToast(this, "asda");
-        //PublicMethods.getEditText();
-        PublicMethods.getBtnText(btnSample1);
+
 
     }
 

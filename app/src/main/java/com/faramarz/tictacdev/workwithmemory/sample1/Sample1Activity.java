@@ -1,11 +1,6 @@
 package com.faramarz.tictacdev.workwithmemory.sample1;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
-
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.View;
@@ -15,8 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.faramarz.tictacdev.workwithmemory.R;
-import com.faramarz.tictacdev.workwithmemory.utility.BaseActivity;
-import com.faramarz.tictacdev.workwithmemory.utility.PublicMethods;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -107,7 +100,7 @@ public class Sample1Activity extends AppCompatActivity {
         Toast.makeText(this, "File Removed", Toast.LENGTH_SHORT).show();
     }
 
-    private static boolean isExternalStorageReadOnly() {
+    public static boolean isExternalStorageReadOnly() {
         String extStorageState = Environment.getExternalStorageState();
         if (Environment.MEDIA_MOUNTED_READ_ONLY.equals(extStorageState)) {
             return true;
@@ -115,7 +108,7 @@ public class Sample1Activity extends AppCompatActivity {
         return false;
     }
 
-    private static boolean isExternalStorageAvailable() {
+    public static boolean isExternalStorageAvailable() {
         String extStorageState = Environment.getExternalStorageState();
         if (Environment.MEDIA_MOUNTED.equals(extStorageState)) {
             return true;

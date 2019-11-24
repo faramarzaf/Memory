@@ -20,7 +20,7 @@
         android:id="@+id/btnSample2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sample 2"
+        android:text="Sample 2 (SD card)"
 
         />
 
